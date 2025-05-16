@@ -44,29 +44,6 @@ function fs.loadPlaytimeData()
   return games
 end
 
-function fs.loadPlaytimeData()
-  local path = fs.findFirstExistingFile(cfg.PATHS.playtime_data)
-  if not path then return {} end
-
-  local f = io.open(path, "r")
-  if not f then return {} end
-
-  local raw = f:read("*a")
-  f:close()
-
-  local decoded, pos, err = json.decode(raw, 1, nil)
-  if err then
-    return {}
-  end
-
-  local games = {}
-  for key, val in pairs(decoded) do
-    val.path = key
-    table.insert(games, val)
-  end
-  return games
-end
-
 --- Loads an image file from disk and converts it into a Love2D Image object.
 -- @param path string The full path to the image file.
 -- @return love.Image|nil A Love2D image object if loading succeeded, or nil on failure.
