@@ -13,3 +13,9 @@ A simple app to view playtime history on devices running [**muOS**](https://muos
 - Sort by name, total play time, launches, or recently played
 - Enable or disable background artwork (sourced from `info/catalogue/<system>/preview`)
 - Switch between a few fonts
+
+### 🎮 Controls
+- Quit (B)
+- Sort (Y)
+- Toggle Font (X)
+- Toggle Background (A)
