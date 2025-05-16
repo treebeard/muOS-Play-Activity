@@ -34,7 +34,7 @@ function fs.loadPlaytimeData()
   f:close()
 
   local decoded, pos, decodeErr = json.decode(raw, 1, nil)
-  if decodeErr then return {} end
+  if not decoded then return {} end
 
   local games = {}
   for key, val in pairs(decoded) do
