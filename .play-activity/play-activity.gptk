@@ -1,0 +1,17 @@
+# paging
+l1     = left
+l2     = left
+r1     = right
+r2     = right
+left   = left
+right  = right
+up     = up
+down   = down
+
+# toggles
+y = s # sort
+x = f # font
+a = a # artwork
+
+# quit
+b = esc
